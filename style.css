@@ -1,0 +1,142 @@
+@font-face {
+    font-family: TTLakes-Bold;
+    src: url("/fonts/TTLakes/TTLakes-Bold.woff");
+}
+
+@font-face {
+    font-family: TTLakes-Light;
+    src: url("/fonts/TTLakes/TTLakes-Light.woff");
+}
+
+@font-face {
+    font-family: TTLakes-Medium;
+    src: url("/fonts/TTLakes/TTLakes-Medium.woff");
+}
+
+body {
+    width: 320px;
+}
+
+.container {
+    max-width: 288px;
+    padding: 16px;
+}
+
+.main {
+    width: 100%;
+    background-color: #F8F8F8;
+    font-family: TTLakes-Light;
+}
+
+.header__list {
+    display: flex;
+    max-width: 320px;
+    height: 88px; 
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.list__item {
+    margin: 0;
+    max-width: 40px;
+    max-height: 40px;
+}
+
+.list__logo {
+    margin: 0;
+    max-width: 96.55px;
+    max-height: 50.81px;
+}
+
+.list__border {
+    margin: 0;
+    max-width: 2px;
+    max-height: 32px;
+}
+
+.main__title {
+    display: flex;
+    padding: 24px 0 24px 0;
+}
+
+.title {
+    font-size: 28px;
+    line-height: 40px;
+    font-family: TTLakes-Bold;
+    letter-spacing: -0.6px;
+    text-align: center;
+    margin-left: 12px;
+}
+
+.img__title {
+    max-width: 4px;
+    max-height: 40px;
+}
+
+.menu {
+    max-width: 300px;
+    display: flex;
+    margin-bottom: 24px;
+    overflow: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.menu__item {
+    max-width: 246px;
+    max-height: 40px;
+    padding: 8px 9.3px 8px 16.5px;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    white-space: nowrap;
+    color: #7E7E82;
+    text-decoration: none;
+}
+
+.menu__item:last-child {
+    margin-right: 16px;
+}
+
+.menu__item:hover {
+    border: 2px solid #B8FFEC;
+    border-radius: 6px;
+    background-color: #FFFFFF;
+    transition-delay: 0.15s;
+}
+
+.description {
+    max-width: 288px;
+    max-height: 90px;
+    padding-bottom: 16px;
+    font-family: TTLakes-Light;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.2px;
+    color: #1B1C21;
+}
+
+.description__btn { 
+    margin-left: -10px;
+    /* margin-bottom: 16px; */
+    border: none; 
+    outline: none; 
+    background-color: #F8F8F8;
+    display: flex;
+    align-items: center;
+    color: #1B1C21;
+    font-family: TTLakes-Medium;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+}
+
+.description__btn > img{
+    margin-right: 8px;
+    margin-bottom: 0;
+}
+
+.image {
+    margin-top: 0;
+    width: 100%;
+}
