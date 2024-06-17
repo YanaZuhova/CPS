@@ -18,8 +18,7 @@ body {
 }
 
 .container {
-    max-width: 288px;
-    padding: 16px;
+    max-width: 100%;
 }
 
 .main {
@@ -29,6 +28,7 @@ body {
 }
 
 .header__list {
+    margin: 0;
     display: flex;
     max-width: 320px;
     height: 88px; 
@@ -74,7 +74,7 @@ body {
 }
 
 .menu {
-    max-width: 300px;
+    max-width: 100%;
     display: flex;
     margin-bottom: 24px;
     overflow: auto;
@@ -94,8 +94,12 @@ body {
     text-decoration: none;
 }
 
-.menu__item:last-child {
-    margin-right: 16px;
+.for-middle {
+    display: none;
+}
+
+.for-large {
+    display: none;
 }
 
 .menu__item:hover {
@@ -105,10 +109,10 @@ body {
     transition-delay: 0.15s;
 }
 
-.description {
-    max-width: 288px;
-    max-height: 90px;
-    padding-bottom: 16px;
+.description__text {
+    max-width: 100%;
+    /* min-height: 90px; */
+    margin: 0 16px 16px 16px;
     font-family: TTLakes-Light;
     font-size: 14px;
     line-height: 18px;
@@ -117,8 +121,7 @@ body {
 }
 
 .description__btn { 
-    margin-left: -10px;
-    /* margin-bottom: 16px; */
+    margin-bottom: 16px;
     border: none; 
     outline: none; 
     background-color: #F8F8F8;
@@ -136,7 +139,7 @@ body {
     margin-bottom: 0;
 }
 
-.image {
+.block2 {
     margin-top: 0;
     width: 100%;
 }
@@ -145,5 +148,79 @@ body {
 
 @media (min-width: 321px) and (max-width: 768px) {
 
+    body {
+        width: 768px;
+    }
+    
+    .container {
+        max-width: 720px;
+        padding: 0 24px;
+    }
+    
+    .header__list {
+        max-width: 768px; 
+    }
 
+    .for-middle {
+        display: block;
+    }
+
+    .list__logo {
+        margin-right: 250px;
+    }
+
+    .description {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .description__btn { 
+        margin-bottom: 54px;
+    }
+    
+    .description__btn > img{
+        margin-right: 8px;
+        margin-bottom: 0;
+    }
+
+    .block1 {
+        max-width: 312px;
+        min-height: 160px;
+    }
+
+    .block2 {
+        max-width: 360px;
+        min-height: 208px;
+    }
+
+    .block2 > img {
+        width: 100%;
+    }
+}
+
+
+@media (min-width: 769px) and (max-width: 1120px) {
+
+    body {
+        width: 1120px;
+    }
+    
+    .container {
+        max-width: 1056px;
+        padding: 0 32px;
+    }
+    
+    .header__list {
+        max-width: 1120px; 
+    }
+
+    .for-middle {
+        display: block;
+    }
+
+    .for-large {
+        display: block;
+    }
+
+    
 }
